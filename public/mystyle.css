@@ -5,15 +5,16 @@ body {
     'Open Sans', 'Helvetica Neue', sans-serif;
   }
   h1 {
-    color: pink;
-    font-size: 5px;
+    color: #dbafa7;
+    font-size: 50px;
+    margin-top: 5px;
   }
   img {
     max-width: 250px;
   }
   .main-container {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,9 +22,9 @@ body {
   }
   .header {
     width: auto;
-    border-bottom: 3pt solid pink;
+    border-bottom: 3pt solid #dbafa7;
     padding: 0px 100px;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
   }
   .main-content {
     display: flex;
