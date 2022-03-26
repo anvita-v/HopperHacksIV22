@@ -1,7 +1,7 @@
 var chart = JSC.chart('chartDiv', {
     debug: true,
     type: '',
-    title_label_text: 'Blood Pressure',
+    title_label_text: 'Weight',
     legend_visible: false,
     defaultSeries: {
       shape_opacity: 3.9,
