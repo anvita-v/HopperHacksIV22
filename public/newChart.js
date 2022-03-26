@@ -1,7 +1,7 @@
 var chart = JSC.chart('chartDiv', {
     debug: true,
     type: '',
-    title_label_text: 'Area Series Types',
+    title_label_text: 'Blood Pressure',
     legend_visible: false,
     defaultSeries: {
       shape_opacity: 3.9,
@@ -9,17 +9,6 @@ var chart = JSC.chart('chartDiv', {
       defaultPoint_marker: {
         size: 13,
         outline: { color: '#DBDBDB', width: 0 }
-      }
-    },
-    toolbar_items: {
-      'Area Type': {
-        type: 'select',
-        label_style_fontSize: 13,
-        margin: 5,
-        items: 'Area,Area Step,Area Spline',
-        events_change: function(val) {
-          chart.series().options({ type: val });
-        }
       }
     },
     xAxis: { scale_type: '' },
