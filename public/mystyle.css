@@ -5,7 +5,7 @@ body {
     'Open Sans', 'Helvetica Neue', sans-serif;
   }
   h1 {
-    color: #dbafa7;
+    color: #c9a89c;
     font-size: 50px;
     margin-top: 5px;
   }
@@ -22,7 +22,7 @@ body {
   }
   .header {
     width: auto;
-    border-bottom: 3pt solid #dbafa7;
+    border-bottom: 3pt solid #c9a89c;
     padding: 0px 100px;
     margin-bottom: 95px;
   }
