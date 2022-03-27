@@ -17,3 +17,8 @@ const app = initializeApp(firebaseConfig);
 
 // Get a reference to the database service
 const database = getDatabase(app);
+
+ function getInputValue(){
+    var inputVal = document.getElementById("fname").value;
+    alert(inputVal); 
+}

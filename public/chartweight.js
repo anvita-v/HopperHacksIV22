@@ -1,3 +1,4 @@
+
 var chart = JSC.chart('chartDiv', {
     debug: true,
     type: '',
@@ -6,6 +7,7 @@ var chart = JSC.chart('chartDiv', {
     defaultSeries: {
       shape_opacity: 3.9,
       color: '#A1807B',
+      height: 40, 
       defaultPoint_marker: {
         size: 13,
         outline: { color: '#DBDBDB', width: 0 }
