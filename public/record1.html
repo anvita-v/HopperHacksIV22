@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-<title>Star of Life</title>
-=======
 
-<title>Tutorial Website</title>
->>>>>>> 06f7433ec988b22fac93f85692e0e2a5fbe59cdc
+<title>Star of Life</title>
   <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <style>
@@ -25,11 +21,44 @@
     <div class="main-content">
 
       <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="fname">Weight:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="fname">Blood Pressure:</label><br>
-        <input type="text" id="fname" name="fname"><br>
+        <label for="bname">Weight:</label><br>
+        <input type="text" id="WT" name="WT"><br>
+        <button class="submit" onclick="wtsubmitted()">Submit</button>
       </form>
+      <form>
+        <label for="fname">Blood Pressure:</label><br>
+        <input type="text" id="BP" name="BP"><br>
+        <button class="submit" onclick="bpsubmitted()">Submit</button>
+      </form>
+
+      <script> 
+  
+      
+      function wtsubmitted(){
+
+        var inputVal = document.getElementById("WT").value;
+        var tmp = localStorage.getItem("WT");
+        var todayDate = new Date().toISOString().slice(0,19);
+        if (tmp != null) {
+              localStorage.setItem("WT",tmp + "," + todayDate + ";" + inputVal); 
+        } else {
+              localStorage.setItem("WT",todayDate + ";" + inputVal); 
+        }
+        var tmp = localStorage.getItem("WT");
+        alert(tmp);
+    }
+    function bpsubmitted(){
+  
+      var inputVal = document.getElementById("BP").value;
+        var tmp = localStorage.getItem("BP");
+        var todayDate = new Date().toISOString().slice(0,19);
+        if (tmp != null) {
+              localStorage.setItem("BP",tmp + "," + todayDate + ";" + inputVal); 
+        } else {
+              localStorage.setItem("BP",todayDate + ";" + inputVal); 
+        }
+        var tmp = localStorage.getItem("BP");       
+        alert(tmp); 
+    }
+    </script>
 

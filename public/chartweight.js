@@ -1,10 +1,31 @@
+var bp = localStorage.getItem("BP");
+
+
+
+if ((bp != null) && bp.length > 0 ) {
+const array = bp.split(",");
+var length = array.length;
+var alldata = new Array(new Array());
+alert (length);
+for(i=0; i<length; i++)
+{
+    alert("ARR" + array[i]);
+var splitdata =  array[i].split(";") ;
+alert (splitdata);
+alldata[i][0]= splitdata[0]
+alldata[i][1] = splitdata[1];
+//alert (splitdata);
+//alert (alldata);
+}
+//alert (i);
+}
 
 var chart = JSC.chart('chartDiv', {
     debug: true,
     type: '',
     title_label_text: 'Weight',
     legend_visible: false,
-    defaultSeries: {
+    defaultSeries: { 
       shape_opacity: 3.9,
       color: '#A1807B',
       height: 40, 
